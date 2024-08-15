@@ -1,6 +1,14 @@
--- GameProber v1.0.0
+-- GameProber v1.1.0
 
--- Instances:
+if not game:IsLoaded() then
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Script loading",
+		Text = "Waiting for the game to finish loading!",
+		Duration = 5
+	})
+	game.Loaded:Wait()
+end
+		-- Instances:
 
 local Converted = {
 	["_GameProber"] = Instance.new("ScreenGui");
@@ -13,28 +21,43 @@ local Converted = {
 	["_Logs"] = Instance.new("TextButton");
 	["_UICorner1"] = Instance.new("UICorner");
 	["_UIPadding"] = Instance.new("UIPadding");
+	["_LocalScript"] = Instance.new("LocalScript");
 	["_Explorer"] = Instance.new("TextButton");
 	["_UICorner2"] = Instance.new("UICorner");
 	["_UIPadding1"] = Instance.new("UIPadding");
+	["_LocalScript1"] = Instance.new("LocalScript");
 	["_Area"] = Instance.new("Frame");
 	["_UIPageLayout"] = Instance.new("UIPageLayout");
-	["_Logs1"] = Instance.new("Frame");
+	["_Explorer1"] = Instance.new("Frame");
 	["_TextLabel"] = Instance.new("TextLabel");
 	["_UICorner3"] = Instance.new("UICorner");
-	["_LogChips"] = Instance.new("ScrollingFrame");
+	["_ScrollingFrame"] = Instance.new("ScrollingFrame");
 	["_UIListLayout1"] = Instance.new("UIListLayout");
-	["_ChipSample"] = Instance.new("TextButton");
+	["_Sample"] = Instance.new("TextButton");
 	["_UICorner4"] = Instance.new("UICorner");
 	["_UIPadding2"] = Instance.new("UIPadding");
+	["_UIPadding3"] = Instance.new("UIPadding");
+	["_TextButton"] = Instance.new("TextButton");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_UIPadding4"] = Instance.new("UIPadding");
+	["_Explorer2"] = Instance.new("LocalScript");
+	["_Count"] = Instance.new("TextLabel");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_Logs1"] = Instance.new("Frame");
+	["_TextLabel1"] = Instance.new("TextLabel");
+	["_UICorner7"] = Instance.new("UICorner");
+	["_LogChips"] = Instance.new("ScrollingFrame");
+	["_UIListLayout2"] = Instance.new("UIListLayout");
+	["_ChipSample"] = Instance.new("TextButton");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_UIPadding5"] = Instance.new("UIPadding");
 	["_LogModule"] = Instance.new("ModuleScript");
 	["_Logs2"] = Instance.new("ScrollingFrame");
 	["_LogSample"] = Instance.new("TextLabel");
-	["_UIListLayout2"] = Instance.new("UIListLayout");
-	["_UICorner5"] = Instance.new("UICorner");
-	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
+	["_UIListLayout3"] = Instance.new("UIListLayout");
 	["_Toggle"] = Instance.new("TextButton");
-	["_UICorner6"] = Instance.new("UICorner");
-	["_UIPadding3"] = Instance.new("UIPadding");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_UIPadding6"] = Instance.new("UIPadding");
 	["_Master"] = Instance.new("LocalScript");
 }
 
@@ -51,8 +74,8 @@ Converted["_GameProberMain"].AnchorPoint = Vector2.new(0, 0.5)
 Converted["_GameProberMain"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
 Converted["_GameProberMain"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_GameProberMain"].BorderSizePixel = 0
-Converted["_GameProberMain"].Position = UDim2.new(-0.100000001, 0, 0.5, 0)
-Converted["_GameProberMain"].Size = UDim2.new(0.699999988, 0, 1, 0)
+Converted["_GameProberMain"].Position = UDim2.new(0, 0, 0.5, 0)
+Converted["_GameProberMain"].Size = UDim2.new(0.63150686, 0, 1, 0)
 Converted["_GameProberMain"].Name = "GameProberMain"
 Converted["_GameProberMain"].Parent = Converted["_GameProber"]
 
@@ -69,8 +92,8 @@ Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Title"].BackgroundTransparency = 1
 Converted["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Title"].BorderSizePixel = 0
-Converted["_Title"].Position = UDim2.new(0.588988483, 0, 0.0465587042, 0)
-Converted["_Title"].Size = UDim2.new(0.365831345, 0, 0.0789473653, 0)
+Converted["_Title"].Position = UDim2.new(0.525808096, 0, 0.0425101221, 0)
+Converted["_Title"].Size = UDim2.new(0.438796431, 0, 0.0789473653, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_GameProberMain"]
 
@@ -87,8 +110,8 @@ Converted["_Tabs"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Tabs"].BackgroundTransparency = 1
 Converted["_Tabs"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Tabs"].BorderSizePixel = 0
-Converted["_Tabs"].Position = UDim2.new(0.562237024, 0, 0.961538434, 0)
-Converted["_Tabs"].Size = UDim2.new(0.784708261, 0, 0.12348178, 0)
+Converted["_Tabs"].Position = UDim2.new(0.493721128, 0, 0.957489908, 0)
+Converted["_Tabs"].Size = UDim2.new(0.941218436, 0, 0.12348178, 0)
 Converted["_Tabs"].Name = "Tabs"
 Converted["_Tabs"].Parent = Converted["_GameProberMain"]
 
@@ -107,6 +130,7 @@ Converted["_Logs"].TextWrapped = true
 Converted["_Logs"].BackgroundColor3 = Color3.fromRGB(24.00000236928463, 24.00000236928463, 24.00000236928463)
 Converted["_Logs"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs"].BorderSizePixel = 0
+Converted["_Logs"].LayoutOrder = 2
 Converted["_Logs"].Size = UDim2.new(0.333000004, -10, 1, 0)
 Converted["_Logs"].Name = "Logs"
 Converted["_Logs"].Parent = Converted["_Tabs"]
@@ -148,27 +172,29 @@ Converted["_Area"].BackgroundTransparency = 1
 Converted["_Area"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Area"].BorderSizePixel = 0
 Converted["_Area"].ClipsDescendants = true
-Converted["_Area"].Position = UDim2.new(0.570582509, 0, 0.485829949, 0)
-Converted["_Area"].Size = UDim2.new(0.766416669, 0, 0.651821852, 0)
+Converted["_Area"].Position = UDim2.new(0.503731012, 0, 0.481781363, 0)
+Converted["_Area"].Size = UDim2.new(0.919278502, 0, 0.651821852, 0)
 Converted["_Area"].Name = "Area"
 Converted["_Area"].Parent = Converted["_GameProberMain"]
 
 Converted["_UIPageLayout"].Circular = true
 Converted["_UIPageLayout"].EasingStyle = Enum.EasingStyle.Cubic
+Converted["_UIPageLayout"].Padding = UDim.new(0, 10)
 Converted["_UIPageLayout"].TweenTime = 0.6499999761581421
+Converted["_UIPageLayout"].HorizontalAlignment = Enum.HorizontalAlignment.Right
 Converted["_UIPageLayout"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIPageLayout"].Parent = Converted["_Area"]
 
-Converted["_Logs1"].BackgroundColor3 = Color3.fromRGB(16.000000946223736, 16.000000946223736, 16.000000946223736)
-Converted["_Logs1"].BackgroundTransparency = 0.800000011920929
-Converted["_Logs1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Logs1"].BorderSizePixel = 0
-Converted["_Logs1"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Logs1"].Name = "Logs"
-Converted["_Logs1"].Parent = Converted["_Area"]
+Converted["_Explorer1"].BackgroundColor3 = Color3.fromRGB(16.000000946223736, 16.000000946223736, 16.000000946223736)
+Converted["_Explorer1"].BackgroundTransparency = 0.800000011920929
+Converted["_Explorer1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Explorer1"].BorderSizePixel = 0
+Converted["_Explorer1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Explorer1"].Name = "Explorer"
+Converted["_Explorer1"].Parent = Converted["_Area"]
 
 Converted["_TextLabel"].Font = Enum.Font.Gotham
-Converted["_TextLabel"].Text = "Logs"
+Converted["_TextLabel"].Text = "Explorer"
 Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel"].TextScaled = true
 Converted["_TextLabel"].TextSize = 14
@@ -179,10 +205,121 @@ Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_TextLabel"].BorderSizePixel = 0
 Converted["_TextLabel"].Position = UDim2.new(0.0453460626, 0, 0.0527950302, 0)
 Converted["_TextLabel"].Size = UDim2.new(0.217183769, 0, 0.111801244, 0)
-Converted["_TextLabel"].Parent = Converted["_Logs1"]
+Converted["_TextLabel"].Parent = Converted["_Explorer1"]
 
 Converted["_UICorner3"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner3"].Parent = Converted["_Logs1"]
+Converted["_UICorner3"].Parent = Converted["_Explorer1"]
+
+Converted["_ScrollingFrame"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Converted["_ScrollingFrame"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_ScrollingFrame"].ScrollBarThickness = 1
+Converted["_ScrollingFrame"].Active = true
+Converted["_ScrollingFrame"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_ScrollingFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ScrollingFrame"].BackgroundTransparency = 1
+Converted["_ScrollingFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame"].BorderSizePixel = 0
+Converted["_ScrollingFrame"].Position = UDim2.new(0.504491687, 0, 0.59354645, 0)
+Converted["_ScrollingFrame"].Size = UDim2.new(1, -10, 0.813000023, -10)
+Converted["_ScrollingFrame"].Parent = Converted["_Explorer1"]
+
+Converted["_UIListLayout1"].Padding = UDim.new(0, 10)
+Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout1"].Parent = Converted["_ScrollingFrame"]
+
+Converted["_Sample"].Font = Enum.Font.Gotham
+Converted["_Sample"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Sample"].TextScaled = true
+Converted["_Sample"].TextSize = 14
+Converted["_Sample"].TextWrapped = true
+Converted["_Sample"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Sample"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
+Converted["_Sample"].BackgroundTransparency = 0.800000011920929
+Converted["_Sample"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Sample"].BorderSizePixel = 0
+Converted["_Sample"].Size = UDim2.new(1, 0, 0, 20)
+Converted["_Sample"].Visible = false
+Converted["_Sample"].Name = "Sample"
+Converted["_Sample"].Parent = Converted["_ScrollingFrame"]
+
+Converted["_UICorner4"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner4"].Parent = Converted["_Sample"]
+
+Converted["_UIPadding2"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding2"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding2"].Parent = Converted["_Sample"]
+
+Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding3"].PaddingRight = UDim.new(1, 0)
+Converted["_UIPadding3"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding3"].Parent = Converted["_ScrollingFrame"]
+
+Converted["_TextButton"].Font = Enum.Font.Gotham
+Converted["_TextButton"].Text = "Refresh"
+Converted["_TextButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton"].TextScaled = true
+Converted["_TextButton"].TextSize = 14
+Converted["_TextButton"].TextWrapped = true
+Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
+Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].BorderSizePixel = 0
+Converted["_TextButton"].Position = UDim2.new(0.682555258, 0, 0.0498914309, 0)
+Converted["_TextButton"].Size = UDim2.new(0.2897138, 0, 0.0997828618, 0)
+Converted["_TextButton"].Parent = Converted["_Explorer1"]
+
+Converted["_UICorner5"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner5"].Parent = Converted["_TextButton"]
+
+Converted["_UIPadding4"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding4"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding4"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding4"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding4"].Parent = Converted["_TextButton"]
+
+Converted["_Count"].Font = Enum.Font.Gotham
+Converted["_Count"].Text = ""
+Converted["_Count"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Count"].TextScaled = true
+Converted["_Count"].TextSize = 14
+Converted["_Count"].TextWrapped = true
+Converted["_Count"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Count"].BackgroundTransparency = 1
+Converted["_Count"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Count"].BorderSizePixel = 0
+Converted["_Count"].Position = UDim2.new(0.431201935, 0, 0.0498914309, 0)
+Converted["_Count"].Size = UDim2.new(0.226830184, 0, 0.0779553652, 0)
+Converted["_Count"].Name = "Count"
+Converted["_Count"].Parent = Converted["_Explorer1"]
+
+Converted["_UICorner6"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner6"].Parent = Converted["_Area"]
+
+Converted["_Logs1"].BackgroundColor3 = Color3.fromRGB(16.000000946223736, 16.000000946223736, 16.000000946223736)
+Converted["_Logs1"].BackgroundTransparency = 0.800000011920929
+Converted["_Logs1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Logs1"].BorderSizePixel = 0
+Converted["_Logs1"].LayoutOrder = 2
+Converted["_Logs1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Logs1"].Name = "Logs"
+Converted["_Logs1"].Parent = Converted["_Area"]
+
+Converted["_TextLabel1"].Font = Enum.Font.Gotham
+Converted["_TextLabel1"].Text = "Logs"
+Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel1"].TextScaled = true
+Converted["_TextLabel1"].TextSize = 14
+Converted["_TextLabel1"].TextWrapped = true
+Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel1"].BackgroundTransparency = 1
+Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel1"].BorderSizePixel = 0
+Converted["_TextLabel1"].Position = UDim2.new(0.0453460626, 0, 0.0527950302, 0)
+Converted["_TextLabel1"].Size = UDim2.new(0.217183769, 0, 0.111801244, 0)
+Converted["_TextLabel1"].Parent = Converted["_Logs1"]
+
+Converted["_UICorner7"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner7"].Parent = Converted["_Logs1"]
 
 Converted["_LogChips"].AutomaticCanvasSize = Enum.AutomaticSize.X
 Converted["_LogChips"].CanvasSize = UDim2.new(0, 0, 0, 0)
@@ -198,8 +335,9 @@ Converted["_LogChips"].Size = UDim2.new(0.873508334, 0, 0.0869565234, 0)
 Converted["_LogChips"].Name = "LogChips"
 Converted["_LogChips"].Parent = Converted["_Logs1"]
 
-Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout1"].Parent = Converted["_LogChips"]
+Converted["_UIListLayout2"].FillDirection = Enum.FillDirection.Horizontal
+Converted["_UIListLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout2"].Parent = Converted["_LogChips"]
 
 Converted["_ChipSample"].Font = Enum.Font.Gotham
 Converted["_ChipSample"].TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -214,15 +352,17 @@ Converted["_ChipSample"].Visible = false
 Converted["_ChipSample"].Name = "ChipSample"
 Converted["_ChipSample"].Parent = Converted["_LogChips"]
 
-Converted["_UICorner4"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner4"].Parent = Converted["_ChipSample"]
+Converted["_UICorner8"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner8"].Parent = Converted["_ChipSample"]
 
-Converted["_UIPadding2"].PaddingBottom = UDim.new(0, 4)
-Converted["_UIPadding2"].PaddingLeft = UDim.new(0, 4)
-Converted["_UIPadding2"].PaddingRight = UDim.new(0, 4)
-Converted["_UIPadding2"].PaddingTop = UDim.new(0, 4)
-Converted["_UIPadding2"].Parent = Converted["_ChipSample"]
+Converted["_UIPadding5"].PaddingBottom = UDim.new(0, 4)
+Converted["_UIPadding5"].PaddingLeft = UDim.new(0, 4)
+Converted["_UIPadding5"].PaddingRight = UDim.new(0, 4)
+Converted["_UIPadding5"].PaddingTop = UDim.new(0, 4)
+Converted["_UIPadding5"].Parent = Converted["_ChipSample"]
 
+Converted["_Logs2"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Logs2"].CanvasSize = UDim2.new(0, 0, 0, 0)
 Converted["_Logs2"].ScrollBarThickness = 2
 Converted["_Logs2"].Active = true
 Converted["_Logs2"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -230,8 +370,8 @@ Converted["_Logs2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Logs2"].BackgroundTransparency = 1
 Converted["_Logs2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs2"].BorderSizePixel = 0
-Converted["_Logs2"].Position = UDim2.new(0.5083009, 0, 0.656160057, 0)
-Converted["_Logs2"].Size = UDim2.new(0, 341, 0, 206)
+Converted["_Logs2"].Position = UDim2.new(0.507236481, 0, 0.677899182, 0)
+Converted["_Logs2"].Size = UDim2.new(0.872802258, 0, 0.639751554, 0)
 Converted["_Logs2"].Name = "Logs"
 Converted["_Logs2"].Parent = Converted["_Logs1"]
 
@@ -252,15 +392,9 @@ Converted["_LogSample"].Visible = false
 Converted["_LogSample"].Name = "LogSample"
 Converted["_LogSample"].Parent = Converted["_Logs2"]
 
-Converted["_UIListLayout2"].Padding = UDim.new(0, 10)
-Converted["_UIListLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout2"].Parent = Converted["_Logs2"]
-
-Converted["_UICorner5"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner5"].Parent = Converted["_Area"]
-
-Converted["_UIAspectRatioConstraint"].AspectRatio = 1.106680154800415
-Converted["_UIAspectRatioConstraint"].Parent = Converted["_GameProberMain"]
+Converted["_UIListLayout3"].Padding = UDim.new(0, 10)
+Converted["_UIListLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout3"].Parent = Converted["_Logs2"]
 
 Converted["_Toggle"].Font = Enum.Font.GothamBold
 Converted["_Toggle"].Text = "GP"
@@ -277,14 +411,14 @@ Converted["_Toggle"].ZIndex = 5
 Converted["_Toggle"].Name = "Toggle"
 Converted["_Toggle"].Parent = Converted["_GameProber"]
 
-Converted["_UICorner6"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner6"].Parent = Converted["_Toggle"]
+Converted["_UICorner9"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner9"].Parent = Converted["_Toggle"]
 
-Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 7)
-Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 7)
-Converted["_UIPadding3"].PaddingRight = UDim.new(0, 7)
-Converted["_UIPadding3"].PaddingTop = UDim.new(0, 7)
-Converted["_UIPadding3"].Parent = Converted["_Toggle"]
+Converted["_UIPadding6"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding6"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding6"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding6"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding6"].Parent = Converted["_Toggle"]
 
 -- Fake Module Scripts:
 
@@ -382,7 +516,107 @@ end
 
 -- Fake Local Scripts:
 
-local function MVCJWU_fake_script() -- Fake Script: StarterGui.GameProber.Master
+local function VDBTHVZ_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Tabs.Logs.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Logs"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local uiPage = script.Parent.Parent.Parent.Parent:FindFirstChild("GameProberMain").Area.UIPageLayout
+	local log = script.Parent.Parent.Parent.Parent:FindFirstChild("GameProberMain").Area.Logs
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		uiPage:JumpTo(log)
+	end)
+end
+local function MQAOGZ_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Tabs.Explorer.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Explorer"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local uiPage = script.Parent.Parent.Parent.Parent:FindFirstChild("GameProberMain").Area.UIPageLayout
+	local exp = script.Parent.Parent.Parent.Parent:FindFirstChild("GameProberMain").Area.Explorer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		uiPage:JumpTo(exp)
+	end)
+end
+local function XFRFNPF_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Area.Explorer.Explorer
+    local script = Instance.new("LocalScript")
+    script.Name = "Explorer"
+    script.Parent = Converted["_Explorer1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local function countDots(str)
+		local _, count = string.gsub(str, "%.", "")
+		return count
+	end
+	
+	local sample = script.Parent.ScrollingFrame.Sample
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		for _, v in ipairs(script.Parent.ScrollingFrame:GetChildren()) do
+			if v:IsA("TextButton") and v.Name ~= "Sample" then
+				v:Destroy()
+			end
+		end
+		local gameObjectCount = #game:GetDescendants() - #script.Parent.Parent.Parent.Parent:GetDescendants()
+		local clock = os.clock()
+		for ind, v in ipairs(game:GetDescendants()) do
+			if v:IsDescendantOf(script.Parent.Parent.Parent.Parent) then
+				continue
+			end
+			local item = sample:Clone()
+			
+			item.Parent = script.Parent.ScrollingFrame
+			item.Visible = true
+			item.Text = v.Name
+			
+			item.Name = v.Name
+			
+			if v:IsA("RemoteEvent") then
+				item.TextColor3 = Color3.fromRGB(0, 255, 255)
+			end
+			
+			if v:IsA("RemoteFunction") then
+				item.TextColor3 = Color3.fromRGB(255, 0, 255)
+			end
+			
+			item.LayoutOrder = ind
+			
+			item.UIPadding.PaddingLeft = UDim.new(0, 14 * countDots(v:GetFullName()))
+			if os.clock() > clock + 0.5 then
+				task.wait()
+				script.Parent.Count.Text = ind .. "/" .. gameObjectCount
+				clock = os.clock()
+			end
+		end
+		script.Parent.Count.Text = ""
+	end)
+end
+local function APFFYIC_fake_script() -- Fake Script: StarterGui.GameProber.Master
     local script = Instance.new("LocalScript")
     script.Name = "Master"
     script.Parent = Converted["_GameProber"]
@@ -414,7 +648,7 @@ local function MVCJWU_fake_script() -- Fake Script: StarterGui.GameProber.Master
 			}):Play()
 		else
 			ts:Create(MainGPFrame, CBOut, {
-				Position = UDim2.fromScale(-0.1, 0.5)
+				Position = UDim2.fromScale(0, 0.5)
 			}):Play()
 		end
 		MainGPFrameVisible = not MainGPFrameVisible
@@ -453,8 +687,8 @@ local function MVCJWU_fake_script() -- Fake Script: StarterGui.GameProber.Master
 	
 	
 	-- Remote events logging
-	RM_EVENT = "Remote event/functions"
-	capture_rm = false
+	local RM_EVENT = "Remote event/functions"
+	local capture_rm = false
 	
 	local captured_rmEs = {}
 	local captured_rmFs = {}
@@ -523,6 +757,28 @@ local function MVCJWU_fake_script() -- Fake Script: StarterGui.GameProber.Master
 			lgmod.log("Disconnected all Remote event/function connections.")
 		end
 	end)
+	
+	-- Descendants added/removed logging
+	local DC_ADDREM = "Descendants added/removed"
+	
+	local dc_capture = nil
+	
+	lgmod.chip(DC_ADDREM, function(state)
+		if state == true then
+			lgmod.log("Descendants added/removed logging started.")
+			dc_capture = game.DescendantAdded:Connect(function(v)
+				if v:IsDescendantOf(script.Parent) then return end
+				lgmod.log("Descendant added: " .. v:GetFullName() .. " (" .. typeof(v) .. ")")
+			end)
+		else
+			if dc_capture then
+				dc_capture:Disconnect()
+			end
+		end
+	end)
 end
 
-coroutine.wrap(MVCJWU_fake_script)()
+coroutine.wrap(VDBTHVZ_fake_script)()
+coroutine.wrap(MQAOGZ_fake_script)()
+coroutine.wrap(XFRFNPF_fake_script)()
+coroutine.wrap(APFFYIC_fake_script)()

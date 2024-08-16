@@ -1,5 +1,4 @@
--- GameProber v1.1.0
-
+-- GameProber v1.2.0
 if not game:IsLoaded() then
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "Script loading",
@@ -26,39 +25,48 @@ local Converted = {
 	["_UICorner2"] = Instance.new("UICorner");
 	["_UIPadding1"] = Instance.new("UIPadding");
 	["_LocalScript1"] = Instance.new("LocalScript");
+	["_Properties"] = Instance.new("TextButton");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_UIPadding2"] = Instance.new("UIPadding");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_TextLabel"] = Instance.new("TextLabel");
 	["_Area"] = Instance.new("Frame");
 	["_UIPageLayout"] = Instance.new("UIPageLayout");
 	["_Explorer1"] = Instance.new("Frame");
-	["_TextLabel"] = Instance.new("TextLabel");
-	["_UICorner3"] = Instance.new("UICorner");
+	["_TextLabel1"] = Instance.new("TextLabel");
+	["_UICorner4"] = Instance.new("UICorner");
 	["_ScrollingFrame"] = Instance.new("ScrollingFrame");
 	["_UIListLayout1"] = Instance.new("UIListLayout");
 	["_Sample"] = Instance.new("TextButton");
-	["_UICorner4"] = Instance.new("UICorner");
-	["_UIPadding2"] = Instance.new("UIPadding");
-	["_UIPadding3"] = Instance.new("UIPadding");
-	["_TextButton"] = Instance.new("TextButton");
 	["_UICorner5"] = Instance.new("UICorner");
+	["_UIPadding3"] = Instance.new("UIPadding");
 	["_UIPadding4"] = Instance.new("UIPadding");
+	["_TextButton"] = Instance.new("TextButton");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_UIPadding5"] = Instance.new("UIPadding");
 	["_Explorer2"] = Instance.new("LocalScript");
 	["_Count"] = Instance.new("TextLabel");
-	["_UICorner6"] = Instance.new("UICorner");
-	["_Logs1"] = Instance.new("Frame");
-	["_TextLabel1"] = Instance.new("TextLabel");
 	["_UICorner7"] = Instance.new("UICorner");
+	["_Logs1"] = Instance.new("Frame");
+	["_TextLabel2"] = Instance.new("TextLabel");
+	["_UICorner8"] = Instance.new("UICorner");
 	["_LogChips"] = Instance.new("ScrollingFrame");
 	["_UIListLayout2"] = Instance.new("UIListLayout");
 	["_ChipSample"] = Instance.new("TextButton");
-	["_UICorner8"] = Instance.new("UICorner");
-	["_UIPadding5"] = Instance.new("UIPadding");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_UIPadding6"] = Instance.new("UIPadding");
 	["_LogModule"] = Instance.new("ModuleScript");
 	["_Logs2"] = Instance.new("ScrollingFrame");
 	["_LogSample"] = Instance.new("TextLabel");
 	["_UIListLayout3"] = Instance.new("UIListLayout");
+	["_Properties1"] = Instance.new("Frame");
+	["_TextLabel3"] = Instance.new("TextLabel");
+	["_UICorner10"] = Instance.new("UICorner");
 	["_Toggle"] = Instance.new("TextButton");
-	["_UICorner9"] = Instance.new("UICorner");
-	["_UIPadding6"] = Instance.new("UIPadding");
+	["_UICorner11"] = Instance.new("UICorner");
+	["_UIPadding7"] = Instance.new("UIPadding");
 	["_Master"] = Instance.new("LocalScript");
+	["_ClickAndHold"] = Instance.new("ModuleScript");
 }
 
 -- Properties:
@@ -166,6 +174,44 @@ Converted["_UIPadding1"].PaddingRight = UDim.new(0.200000003, 0)
 Converted["_UIPadding1"].PaddingTop = UDim.new(0.200000003, 0)
 Converted["_UIPadding1"].Parent = Converted["_Explorer"]
 
+Converted["_Properties"].Font = Enum.Font.Gotham
+Converted["_Properties"].Text = "Propeties"
+Converted["_Properties"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Properties"].TextScaled = true
+Converted["_Properties"].TextSize = 14
+Converted["_Properties"].TextWrapped = true
+Converted["_Properties"].BackgroundColor3 = Color3.fromRGB(24.00000236928463, 24.00000236928463, 24.00000236928463)
+Converted["_Properties"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Properties"].BorderSizePixel = 0
+Converted["_Properties"].Size = UDim2.new(0.333000004, -10, 1, 0)
+Converted["_Properties"].Name = "Properties"
+Converted["_Properties"].Parent = Converted["_Tabs"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner3"].Parent = Converted["_Properties"]
+
+Converted["_UIPadding2"].PaddingBottom = UDim.new(0.200000003, 0)
+Converted["_UIPadding2"].PaddingLeft = UDim.new(0.200000003, 0)
+Converted["_UIPadding2"].PaddingRight = UDim.new(0.200000003, 0)
+Converted["_UIPadding2"].PaddingTop = UDim.new(0.200000003, 0)
+Converted["_UIPadding2"].Parent = Converted["_Properties"]
+
+Converted["_TextLabel"].Font = Enum.Font.Gotham
+Converted["_TextLabel"].Text = "(Explorer)"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 14
+Converted["_TextLabel"].TextTransparency = 0.4099999964237213
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0.5, 0, 0.5, -20)
+Converted["_TextLabel"].Size = UDim2.new(1, 0, 1, -50)
+Converted["_TextLabel"].Parent = Converted["_Properties"]
+
 Converted["_Area"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Area"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Area"].BackgroundTransparency = 1
@@ -193,22 +239,22 @@ Converted["_Explorer1"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_Explorer1"].Name = "Explorer"
 Converted["_Explorer1"].Parent = Converted["_Area"]
 
-Converted["_TextLabel"].Font = Enum.Font.Gotham
-Converted["_TextLabel"].Text = "Explorer"
-Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].TextScaled = true
-Converted["_TextLabel"].TextSize = 14
-Converted["_TextLabel"].TextWrapped = true
-Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundTransparency = 1
-Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel"].BorderSizePixel = 0
-Converted["_TextLabel"].Position = UDim2.new(0.0453460626, 0, 0.0527950302, 0)
-Converted["_TextLabel"].Size = UDim2.new(0.217183769, 0, 0.111801244, 0)
-Converted["_TextLabel"].Parent = Converted["_Explorer1"]
+Converted["_TextLabel1"].Font = Enum.Font.Gotham
+Converted["_TextLabel1"].Text = "Explorer"
+Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel1"].TextScaled = true
+Converted["_TextLabel1"].TextSize = 14
+Converted["_TextLabel1"].TextWrapped = true
+Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel1"].BackgroundTransparency = 1
+Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel1"].BorderSizePixel = 0
+Converted["_TextLabel1"].Position = UDim2.new(0.0453460626, 0, 0.0527950302, 0)
+Converted["_TextLabel1"].Size = UDim2.new(0.217183769, 0, 0.111801244, 0)
+Converted["_TextLabel1"].Parent = Converted["_Explorer1"]
 
-Converted["_UICorner3"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner3"].Parent = Converted["_Explorer1"]
+Converted["_UICorner4"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner4"].Parent = Converted["_Explorer1"]
 
 Converted["_ScrollingFrame"].AutomaticCanvasSize = Enum.AutomaticSize.XY
 Converted["_ScrollingFrame"].CanvasSize = UDim2.new(0, 0, 0, 0)
@@ -237,23 +283,25 @@ Converted["_Sample"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.00
 Converted["_Sample"].BackgroundTransparency = 0.800000011920929
 Converted["_Sample"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Sample"].BorderSizePixel = 0
-Converted["_Sample"].Size = UDim2.new(1, 0, 0, 20)
+Converted["_Sample"].Size = UDim2.new(1, 0, 0, 30)
 Converted["_Sample"].Visible = false
 Converted["_Sample"].Name = "Sample"
 Converted["_Sample"].Parent = Converted["_ScrollingFrame"]
 
-Converted["_UICorner4"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner4"].Parent = Converted["_Sample"]
+Converted["_UICorner5"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner5"].Parent = Converted["_Sample"]
 
-Converted["_UIPadding2"].PaddingLeft = UDim.new(0, 7)
-Converted["_UIPadding2"].PaddingRight = UDim.new(0, 7)
-Converted["_UIPadding2"].Parent = Converted["_Sample"]
-
-Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 5)
 Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 7)
-Converted["_UIPadding3"].PaddingRight = UDim.new(1, 0)
-Converted["_UIPadding3"].PaddingTop = UDim.new(0, 7)
-Converted["_UIPadding3"].Parent = Converted["_ScrollingFrame"]
+Converted["_UIPadding3"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding3"].PaddingTop = UDim.new(0, 5)
+Converted["_UIPadding3"].Parent = Converted["_Sample"]
+
+Converted["_UIPadding4"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding4"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding4"].PaddingRight = UDim.new(1, 0)
+Converted["_UIPadding4"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding4"].Parent = Converted["_ScrollingFrame"]
 
 Converted["_TextButton"].Font = Enum.Font.Gotham
 Converted["_TextButton"].Text = "Refresh"
@@ -268,14 +316,14 @@ Converted["_TextButton"].Position = UDim2.new(0.682555258, 0, 0.0498914309, 0)
 Converted["_TextButton"].Size = UDim2.new(0.2897138, 0, 0.0997828618, 0)
 Converted["_TextButton"].Parent = Converted["_Explorer1"]
 
-Converted["_UICorner5"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner5"].Parent = Converted["_TextButton"]
+Converted["_UICorner6"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner6"].Parent = Converted["_TextButton"]
 
-Converted["_UIPadding4"].PaddingBottom = UDim.new(0, 7)
-Converted["_UIPadding4"].PaddingLeft = UDim.new(0, 7)
-Converted["_UIPadding4"].PaddingRight = UDim.new(0, 7)
-Converted["_UIPadding4"].PaddingTop = UDim.new(0, 7)
-Converted["_UIPadding4"].Parent = Converted["_TextButton"]
+Converted["_UIPadding5"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding5"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding5"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding5"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding5"].Parent = Converted["_TextButton"]
 
 Converted["_Count"].Font = Enum.Font.Gotham
 Converted["_Count"].Text = ""
@@ -292,8 +340,8 @@ Converted["_Count"].Size = UDim2.new(0.226830184, 0, 0.0779553652, 0)
 Converted["_Count"].Name = "Count"
 Converted["_Count"].Parent = Converted["_Explorer1"]
 
-Converted["_UICorner6"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner6"].Parent = Converted["_Area"]
+Converted["_UICorner7"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner7"].Parent = Converted["_Area"]
 
 Converted["_Logs1"].BackgroundColor3 = Color3.fromRGB(16.000000946223736, 16.000000946223736, 16.000000946223736)
 Converted["_Logs1"].BackgroundTransparency = 0.800000011920929
@@ -304,22 +352,22 @@ Converted["_Logs1"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_Logs1"].Name = "Logs"
 Converted["_Logs1"].Parent = Converted["_Area"]
 
-Converted["_TextLabel1"].Font = Enum.Font.Gotham
-Converted["_TextLabel1"].Text = "Logs"
-Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].TextScaled = true
-Converted["_TextLabel1"].TextSize = 14
-Converted["_TextLabel1"].TextWrapped = true
-Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].BackgroundTransparency = 1
-Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel1"].BorderSizePixel = 0
-Converted["_TextLabel1"].Position = UDim2.new(0.0453460626, 0, 0.0527950302, 0)
-Converted["_TextLabel1"].Size = UDim2.new(0.217183769, 0, 0.111801244, 0)
-Converted["_TextLabel1"].Parent = Converted["_Logs1"]
+Converted["_TextLabel2"].Font = Enum.Font.Gotham
+Converted["_TextLabel2"].Text = "Logs"
+Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel2"].TextScaled = true
+Converted["_TextLabel2"].TextSize = 14
+Converted["_TextLabel2"].TextWrapped = true
+Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel2"].BackgroundTransparency = 1
+Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel2"].BorderSizePixel = 0
+Converted["_TextLabel2"].Position = UDim2.new(0.0453460626, 0, 0.0527950302, 0)
+Converted["_TextLabel2"].Size = UDim2.new(0.217183769, 0, 0.111801244, 0)
+Converted["_TextLabel2"].Parent = Converted["_Logs1"]
 
-Converted["_UICorner7"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner7"].Parent = Converted["_Logs1"]
+Converted["_UICorner8"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner8"].Parent = Converted["_Logs1"]
 
 Converted["_LogChips"].AutomaticCanvasSize = Enum.AutomaticSize.X
 Converted["_LogChips"].CanvasSize = UDim2.new(0, 0, 0, 0)
@@ -352,14 +400,14 @@ Converted["_ChipSample"].Visible = false
 Converted["_ChipSample"].Name = "ChipSample"
 Converted["_ChipSample"].Parent = Converted["_LogChips"]
 
-Converted["_UICorner8"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner8"].Parent = Converted["_ChipSample"]
+Converted["_UICorner9"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner9"].Parent = Converted["_ChipSample"]
 
-Converted["_UIPadding5"].PaddingBottom = UDim.new(0, 4)
-Converted["_UIPadding5"].PaddingLeft = UDim.new(0, 4)
-Converted["_UIPadding5"].PaddingRight = UDim.new(0, 4)
-Converted["_UIPadding5"].PaddingTop = UDim.new(0, 4)
-Converted["_UIPadding5"].Parent = Converted["_ChipSample"]
+Converted["_UIPadding6"].PaddingBottom = UDim.new(0, 4)
+Converted["_UIPadding6"].PaddingLeft = UDim.new(0, 4)
+Converted["_UIPadding6"].PaddingRight = UDim.new(0, 4)
+Converted["_UIPadding6"].PaddingTop = UDim.new(0, 4)
+Converted["_UIPadding6"].Parent = Converted["_ChipSample"]
 
 Converted["_Logs2"].AutomaticCanvasSize = Enum.AutomaticSize.Y
 Converted["_Logs2"].CanvasSize = UDim2.new(0, 0, 0, 0)
@@ -396,6 +444,32 @@ Converted["_UIListLayout3"].Padding = UDim.new(0, 10)
 Converted["_UIListLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIListLayout3"].Parent = Converted["_Logs2"]
 
+Converted["_Properties1"].BackgroundColor3 = Color3.fromRGB(16.000000946223736, 16.000000946223736, 16.000000946223736)
+Converted["_Properties1"].BackgroundTransparency = 0.800000011920929
+Converted["_Properties1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Properties1"].BorderSizePixel = 0
+Converted["_Properties1"].LayoutOrder = 1
+Converted["_Properties1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Properties1"].Name = "Properties"
+Converted["_Properties1"].Parent = Converted["_Area"]
+
+Converted["_TextLabel3"].Font = Enum.Font.Gotham
+Converted["_TextLabel3"].Text = "Properties"
+Converted["_TextLabel3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel3"].TextScaled = true
+Converted["_TextLabel3"].TextSize = 14
+Converted["_TextLabel3"].TextWrapped = true
+Converted["_TextLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel3"].BackgroundTransparency = 1
+Converted["_TextLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel3"].BorderSizePixel = 0
+Converted["_TextLabel3"].Position = UDim2.new(0.0453460626, 0, 0.0527950302, 0)
+Converted["_TextLabel3"].Size = UDim2.new(0.217183769, 0, 0.111801244, 0)
+Converted["_TextLabel3"].Parent = Converted["_Properties1"]
+
+Converted["_UICorner10"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner10"].Parent = Converted["_Properties1"]
+
 Converted["_Toggle"].Font = Enum.Font.GothamBold
 Converted["_Toggle"].Text = "GP"
 Converted["_Toggle"].TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -411,14 +485,14 @@ Converted["_Toggle"].ZIndex = 5
 Converted["_Toggle"].Name = "Toggle"
 Converted["_Toggle"].Parent = Converted["_GameProber"]
 
-Converted["_UICorner9"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner9"].Parent = Converted["_Toggle"]
+Converted["_UICorner11"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner11"].Parent = Converted["_Toggle"]
 
-Converted["_UIPadding6"].PaddingBottom = UDim.new(0, 7)
-Converted["_UIPadding6"].PaddingLeft = UDim.new(0, 7)
-Converted["_UIPadding6"].PaddingRight = UDim.new(0, 7)
-Converted["_UIPadding6"].PaddingTop = UDim.new(0, 7)
-Converted["_UIPadding6"].Parent = Converted["_Toggle"]
+Converted["_UIPadding7"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding7"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding7"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding7"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding7"].Parent = Converted["_Toggle"]
 
 -- Fake Module Scripts:
 
@@ -513,10 +587,74 @@ do -- Fake Module: StarterGui.GameProber.GameProberMain.Area.Logs.LogModule
     end
     fake_module_scripts[script] = module_script
 end
+do -- Fake Module: StarterGui.GameProber.ClickAndHold
+    local script = Instance.new("ModuleScript")
+    script.Name = "ClickAndHold"
+    script.Parent = Converted["_GameProber"]
+    local function module_script()
+		local ClickAndHold = {}
+		ClickAndHold.__index = ClickAndHold
+		
+		local UIS = game:GetService("UserInputService")
+		
+		function ClickAndHold.new(textButton, holdTime)
+			local self = setmetatable({}, ClickAndHold)
+			self.textButton = textButton
+			self.holdTime = holdTime or 0.5 -- Default to 0.5 seconds
+			self.holdTask = nil -- Store the task for later cancellation
+			self.initialPosition = nil -- Store the initial position of the mouse/touch
+			self.Holded = Instance.new("BindableEvent")
+		
+			local function calculateDistance(pos1, pos2)
+				return math.sqrt((pos2.X - pos1.X)^2 + (pos2.Y - pos1.Y)^2)
+			end
+		
+			self.textButton.MouseButton1Down:Connect(function(inputX, inputY)
+				self.initialPosition = Vector2.new(inputX, inputY)
+		
+				self.holdTask = task.spawn(function()
+					task.wait(self.holdTime) -- Wait for the specified holdTime
+					if self.holdTask then -- Check if task was cancelled
+						self.Holded:Fire()
+					end
+				end)
+			end)
+		
+			UIS.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					if self.holdTask and self.initialPosition then
+						local currentPosition = input.Position
+						local delta = calculateDistance(self.initialPosition, currentPosition)
+						if delta > 10 then
+							coroutine.close(self.holdTask) -- Cancel the task if moved by at least 10 pixels
+							self.holdTask = nil
+						end
+					end
+				end
+			end)
+		
+			UIS.InputEnded:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					if self.holdTask then
+						coroutine.close(self.holdTask) -- Cancel the task if the button is released
+						self.holdTask = nil
+					end
+					self.initialPosition = nil -- Reset the initial position
+				end
+			end)
+		
+			return self
+		end
+		
+		return ClickAndHold
+		
+    end
+    fake_module_scripts[script] = module_script
+end
 
 -- Fake Local Scripts:
 
-local function VDBTHVZ_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Tabs.Logs.LocalScript
+local function ANKLBA_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Tabs.Logs.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Logs"]
@@ -536,7 +674,7 @@ local function VDBTHVZ_fake_script() -- Fake Script: StarterGui.GameProber.GameP
 		uiPage:JumpTo(log)
 	end)
 end
-local function MQAOGZ_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Tabs.Explorer.LocalScript
+local function MMCUTX_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Tabs.Explorer.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Explorer"]
@@ -556,7 +694,27 @@ local function MQAOGZ_fake_script() -- Fake Script: StarterGui.GameProber.GamePr
 		uiPage:JumpTo(exp)
 	end)
 end
-local function XFRFNPF_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Area.Explorer.Explorer
+local function DBFOOF_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Tabs.Properties.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Properties"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local uiPage = script.Parent.Parent.Parent.Parent:FindFirstChild("GameProberMain").Area.UIPageLayout
+	local prop = script.Parent.Parent.Parent.Parent:FindFirstChild("GameProberMain").Area.Properties
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		uiPage:JumpTo(prop)
+	end)
+end
+local function JQOC_fake_script() -- Fake Script: StarterGui.GameProber.GameProberMain.Area.Explorer.Explorer
     local script = Instance.new("LocalScript")
     script.Name = "Explorer"
     script.Parent = Converted["_Explorer1"]
@@ -573,8 +731,33 @@ local function XFRFNPF_fake_script() -- Fake Script: StarterGui.GameProber.GameP
 		local _, count = string.gsub(str, "%.", "")
 		return count
 	end
-	
+	local filters = {
+		game.Workspace,
+		game.Players,
+		game.Lighting,
+		game.ReplicatedStorage,
+		game.ReplicatedFirst,
+	}
 	local sample = script.Parent.ScrollingFrame.Sample
+	
+	local function pathToInstance(path: string): Instance?
+		local names = path:split(".")
+		if names[1] == "game" then table.remove(names, 1) end
+		if #names == 0 then return nil end
+		if names[1] == "workspace" then names[1] = "Workspace" end
+		local success, inst = pcall(function()
+			return game:GetService(names[1])
+		end)
+		if not success then 
+			inst = game:FindFirstChild(names[1])
+			if not inst then return nil end
+		end 
+		for i = 2, #names do
+			inst = inst:FindFirstChild(names[i])
+			if inst == nil then break end
+		end
+		return inst
+	end
 	
 	script.Parent.TextButton.MouseButton1Click:Connect(function()
 		for _, v in ipairs(script.Parent.ScrollingFrame:GetChildren()) do
@@ -582,19 +765,33 @@ local function XFRFNPF_fake_script() -- Fake Script: StarterGui.GameProber.GameP
 				v:Destroy()
 			end
 		end
-		local gameObjectCount = #game:GetDescendants() - #script.Parent.Parent.Parent.Parent:GetDescendants()
+		local gameObjectCount = #game:GetDescendants()
 		local clock = os.clock()
 		for ind, v in ipairs(game:GetDescendants()) do
 			if v:IsDescendantOf(script.Parent.Parent.Parent.Parent) then
 				continue
 			end
+			
+			local valid = false
+			for _, filter in filters do
+				if v:IsDescendantOf(filter) or v == filter then
+					valid = true
+				end
+			end
+			
+			if not valid then
+				continue
+			end
 			local item = sample:Clone()
 			
 			item.Parent = script.Parent.ScrollingFrame
-			item.Visible = true
+			item.Visible = false
+			if v.Parent == game then
+				item.Visible = true
+			end
 			item.Text = v.Name
 			
-			item.Name = v.Name
+			item.Name = v:GetFullName()
 			
 			if v:IsA("RemoteEvent") then
 				item.TextColor3 = Color3.fromRGB(0, 255, 255)
@@ -607,6 +804,22 @@ local function XFRFNPF_fake_script() -- Fake Script: StarterGui.GameProber.GameP
 			item.LayoutOrder = ind
 			
 			item.UIPadding.PaddingLeft = UDim.new(0, 14 * countDots(v:GetFullName()))
+			
+			item.MouseButton1Click:Connect(function()
+				for _, objectChildren in ipairs(v:GetDescendants()) do
+					local button = script.Parent.ScrollingFrame:FindFirstChild(objectChildren:GetFullName())
+					if button then
+						if button.Visible then
+							button.Visible = false
+						else
+							if objectChildren.Parent == v then
+								button.Visible = true
+							end
+						end
+					end
+				end
+			end)
+			
 			if os.clock() > clock + 0.5 then
 				task.wait()
 				script.Parent.Count.Text = ind .. "/" .. gameObjectCount
@@ -616,7 +829,7 @@ local function XFRFNPF_fake_script() -- Fake Script: StarterGui.GameProber.GameP
 		script.Parent.Count.Text = ""
 	end)
 end
-local function APFFYIC_fake_script() -- Fake Script: StarterGui.GameProber.Master
+local function AYEWEEB_fake_script() -- Fake Script: StarterGui.GameProber.Master
     local script = Instance.new("LocalScript")
     script.Name = "Master"
     script.Parent = Converted["_GameProber"]
@@ -778,7 +991,8 @@ local function APFFYIC_fake_script() -- Fake Script: StarterGui.GameProber.Maste
 	end)
 end
 
-coroutine.wrap(VDBTHVZ_fake_script)()
-coroutine.wrap(MQAOGZ_fake_script)()
-coroutine.wrap(XFRFNPF_fake_script)()
-coroutine.wrap(APFFYIC_fake_script)()
+coroutine.wrap(ANKLBA_fake_script)()
+coroutine.wrap(MMCUTX_fake_script)()
+coroutine.wrap(DBFOOF_fake_script)()
+coroutine.wrap(JQOC_fake_script)()
+coroutine.wrap(AYEWEEB_fake_script)()
